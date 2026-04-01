@@ -8,7 +8,7 @@
 
        DATA DIVISION. 
        WORKING-STORAGE SECTION.
-       01 Number PIC 9(9).
+       01 Num PIC 9(9).
        01 Digit PIC 9.
        01 TempNumber PIC 9(9).
        01 Counter PIC 9.
@@ -16,9 +16,9 @@
        PROCEDURE DIVISION.
        Main.
            DISPLAY "Enter a number: " WITH NO ADVANCING
-           ACCEPT Number
+           ACCEPT Num
 
-           MOVE Number TO TempNumber
+           MOVE Num TO TempNumber
 
            PERFORM CountDigits
            DISPLAY Counter
@@ -29,7 +29,7 @@
        CountDigits.
            PERFORM UNTIL TempNumber = 0
                DIVIDE TempNumber BY 10 GIVING TempNumber REMAINDER Digit
-               IF FUNCTION MOD (Number, Digit) = 0
+               IF FUNCTION MOD (Num, Digit) = 0
                   ADD 1 TO Counter 
                END-IF
            END-PERFORM.

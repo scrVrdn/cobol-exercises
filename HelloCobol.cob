@@ -4,9 +4,9 @@
        ENVIRONMENT DIVISION.
        DATA DIVISION.
        WORKING-STORAGE SECTION.
-       01  Name PIC A(5).
+       01 NameVariable PIC A(5).
        PROCEDURE DIVISION.
        Begin.
-           MOVE "COBOL" TO Name.
-           DISPLAY "Hello ", Name, "!".
+           MOVE "COBOL" TO NameVariable.
+           DISPLAY "Hello ", NameVariable, "!".
            STOP RUN.
