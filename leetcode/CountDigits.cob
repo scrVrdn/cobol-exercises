@@ -22,7 +22,6 @@
 
            PERFORM CountDigits
            DISPLAY Counter
-           MOVE ZEROS TO Counter
 
            STOP RUN.
 

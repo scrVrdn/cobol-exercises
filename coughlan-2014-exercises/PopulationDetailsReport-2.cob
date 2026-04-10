@@ -30,7 +30,7 @@
               88 OwnsNoCar VALUE "N".
        
        FD PopulationReport.
-       01 ReportLine PIC X(71).
+       01 ReportLine PIC X(82).
 
        WORKING-STORAGE SECTION.
        01 ReportHeader.

@@ -15,7 +15,7 @@
        01 SumOfMultiples PIC 9(9) VALUE ZEROS.
        01 CurrentMultiple PIC 9(9).
        01 Counter PIC 9(4).
-       01 PrintSum PIC ZZZ,ZZZ,ZZZ.
+       01 PrintSum PIC ZZZ,ZZZ,ZZ9.
 
        PROCEDURE DIVISION.
        Main.

@@ -15,8 +15,8 @@
        01 CurrentMultiple PIC 999.
        01 SumOfMultiples PIC 9(9) VALUE ZEROS.
        01 TempSum PIC 9(9).
-       01 Temp PIC 9(4).
-       01 PrintSum PIC ZZZ,ZZZ,ZZZ.
+       01 NumOfMultiples PIC 9(4).
+       01 PrintSum PIC ZZZ,ZZZ,ZZ9.
 
        PROCEDURE DIVISION.
        Main.
@@ -53,5 +53,6 @@
            STOP RUN.
 
        CalcSum.
-           DIVIDE Num BY CurrentMultiple GIVING Temp
-           COMPUTE TempSum = CurrentMultiple * Temp * (Temp + 1) / 2.
+           DIVIDE Num BY CurrentMultiple GIVING NumOfMultiples
+           COMPUTE TempSum =
+           CurrentMultiple * NumOfMultiples * (NumOfMultiples + 1) / 2.
